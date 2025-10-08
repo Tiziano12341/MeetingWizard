@@ -13,6 +13,7 @@ export default function App(){
         <div>
             <h1>MeetingWizard</h1>
             <p>{greet(name)}</p>
+            <Child name={name} alter={10} />
         </div>
     );
 }
