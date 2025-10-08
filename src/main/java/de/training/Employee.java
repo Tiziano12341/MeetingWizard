@@ -1,6 +1,7 @@
 package de.training;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 
 @Entity
 @Table(name = "Employee")
