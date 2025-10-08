@@ -1,10 +1,11 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+    <title>Spring + React</title>
 </head>
 <body>
-<p>Get your greeting <a href="/greeting">here</a></p>
+<div id="root"></div>
+<script th:src="@{/dist/bundle.js}"></script>
 </body>
 </html>
