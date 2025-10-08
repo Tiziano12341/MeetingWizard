@@ -1,3 +1,4 @@
+/*
 package de.training;
 
 import org.springframework.context.annotation.Bean;
@@ -33,3 +34,4 @@ public class SecurityConfig {
         //Domain specfic languaes
     }
 }
+*/
