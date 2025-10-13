@@ -1,0 +1,13 @@
+#root {
+    background: #008000FF;
+    color: green;
+    padding: 20px;
+}
+
+.big {
+    text:8px;
+}
+
+.button:hover {
+    backround: #008000FF;
+}

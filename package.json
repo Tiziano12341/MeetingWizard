@@ -1,6 +1,6 @@
 {
   "name": "meetingwizard",
-  "description": "tool to train prorgamming",
+  "description": "tool to train programming",
   "version": "1.0.0",
   "devDependencies": {
     "@babel/core": "^7.25.0",

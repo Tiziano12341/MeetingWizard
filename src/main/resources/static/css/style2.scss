@@ -1,0 +1,21 @@
+$perviewfarbe: #008000FF;
+
+#root {
+  background: $perviewfarbe;
+  color: green;
+  padding: 20px;
+}
+
+@mixin big ($textsize) {
+  text:$textsize;
+  margin: 3px;
+  padding: 3px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px){}
+
+.button:hover {
+  backround: $perviewfarbe;
+  @include big (3px);
+}
+
