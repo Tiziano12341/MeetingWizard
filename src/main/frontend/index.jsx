@@ -1,9 +1,19 @@
 import React from 'react';
-import{createRoot} from 'react-dom/client';
-import App from './App.jsx';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-const root = createRoot(document.getElementById('root'));
-root.render(<App/>);
+const root = document.getElementById('root');
 
+const render = () => {
+    ReactDOM.render(<App />, root);
+};
 
-//index ist keine Kompunente!!!!
+render();
+
+// Enable hot reloading
+if (module.hot) {
+    module.hot.accept('./App', () => {
+        render();
+    });
+}
+

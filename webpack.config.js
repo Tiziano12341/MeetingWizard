@@ -1,11 +1,25 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/main/frontend/index.jsx', // Einstiegspunkt für React
+    mode: 'development',
+
+    entry: './src/main/frontend/index.jsx',
+
     output: {
         path: path.resolve(__dirname, 'src/main/resources/static/dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/', // required for dev-server routing
     },
+
+    devServer: {
+        static: path.join(__dirname, 'src/main/frontend'),
+        port: 3000,
+        hot: true,             // Enable HMR
+        open: true,            // Automatically open browser
+        historyApiFallback: true, // For React Router support
+    },
+
     module: {
         rules: [
             {
@@ -24,7 +38,12 @@ module.exports = {
             }
         ]
     },
+
     resolve: {
         extensions: ['.js', '.jsx']
-    }
+    },
+
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };
