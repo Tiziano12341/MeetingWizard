@@ -13,7 +13,7 @@ module.exports = {
     },
 
     devServer: {
-        static: path.join(__dirname, 'src/main/frontend'),
+        contentBase: path.join(__dirname, 'src/main/frontend'), // <-- NOT 'static' (old API)
         port: 3000,
         hot: true,             // Enable HMR
         open: true,            // Automatically open browser

@@ -1,12 +1,14 @@
 import React from 'react';
 
-export default function App(){
+export default function
+//Webpack Migration in einem Projekt: Spring (Backend, Server) und React (Frontend) zu verbinden
+App(){
 
-    const name = "Tiziano22";
+    const name = "Tiziando222222";
     const date = new Date().getFullYear();
 
     function greet(name){
-        return `Hallo, ${name}`;
+        return `Halloo, ${name}`;
     }
 
     return(
@@ -16,4 +18,3 @@ export default function App(){
         </div>
     );
 }
-//Webpack Migration in einem Projekt: Spring (Backend, Server) und React (Frontend) zu verbinden
