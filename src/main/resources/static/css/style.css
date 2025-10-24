@@ -1,13 +1,16 @@
-#root {
-    background: #008000FF;
-    color: green;
-    padding: 20px;
+.main {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
 }
 
-.big {
-    text:8px;
+.header{
+    background-color: green;
 }
 
-.button:hover {
-    backround: #008000FF;
+.content{
+    background-color: blue;
+}
+
+.footer{
+    background-color: red;
 }

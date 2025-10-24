@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>Spring + React</title>
 </head>
-<link rel="stylesheet" th:href="@{/static/css/style.css}">
+<link rel="stylesheet" href="/css/style.css">
+
 <body>
-<div id="root"></div>
-<script th:src="@{/dist/bundle.js}"></script>
+    <div id="main">
+        <div id="header"></div>
+        <div id="content"></div>
+        <div id="footer"></div>
+    </div>
+
+    <script th:src="@{/dist/bundle.js}"></script>
 </body>
+
 </html>
