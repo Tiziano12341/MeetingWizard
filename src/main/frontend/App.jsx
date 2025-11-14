@@ -1,5 +1,5 @@
 import React from 'react';
-import "./styles.css";
+import "Styles/style.css";
 import Menu from "./Menu";
 
 export default function App() {
